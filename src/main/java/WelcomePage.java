@@ -14,38 +14,54 @@ public class WelcomePage extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         p1 = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
         p2 = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         dashBtn = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
-        jLabel1.setText(" PLAYER 1:");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(152, 89, -1, 34));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         p1.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
-        getContentPane().add(p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(253, 89, 289, 34));
-
-        jLabel2.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
-        jLabel2.setText(" PLAYER 2:");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(152, 130, -1, 34));
+        jPanel1.add(p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 60, 230, 34));
 
         p2.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
-        getContentPane().add(p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(253, 130, 289, 34));
+        jPanel1.add(p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 100, 230, 34));
 
+        jLabel1.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText(" PLAYER 1:");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 60, 110, 34));
+
+        jLabel2.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText(" PLAYER 2:");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, 110, 34));
+
+        dashBtn.setBackground(new java.awt.Color(0, 153, 153));
+        dashBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        dashBtn.setForeground(new java.awt.Color(255, 255, 255));
         dashBtn.setText("GO");
         dashBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 dashBtnActionPerformed(evt);
             }
         });
-        getContentPane().add(dashBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(329, 177, 136, -1));
+        jPanel1.add(dashBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 180, 130, 30));
 
-        pack();
+        jLabel3.setIcon(new javax.swing.ImageIcon("D:\\JAVAPROJECTSWING\\TicTocToy\\src\\main\\java\\Image\\dashbord.jpg")); // NOI18N
+        jLabel3.setText("jLabel3");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 270));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 280));
+
+        setSize(new java.awt.Dimension(515, 313));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void dashBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashBtnActionPerformed
@@ -56,9 +72,7 @@ public class WelcomePage extends javax.swing.JFrame {
         
     }//GEN-LAST:event_dashBtnActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -93,6 +107,8 @@ public class WelcomePage extends javax.swing.JFrame {
     private javax.swing.JButton dashBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField p1;
     private javax.swing.JTextField p2;
     // End of variables declaration//GEN-END:variables
